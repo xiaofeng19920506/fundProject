@@ -5,9 +5,7 @@ import Home from "./Component/Home";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Home />
-      </Routes>
+      <Home />
     </BrowserRouter>
   );
 }

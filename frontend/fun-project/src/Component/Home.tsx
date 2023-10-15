@@ -12,6 +12,7 @@ const AppContainer = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 `;
 
 export default function Home(): React.ReactElement {

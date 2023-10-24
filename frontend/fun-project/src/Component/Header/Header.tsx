@@ -44,6 +44,12 @@ const CategoryItem = styled.span``;
 export default function Header({
   isAuthenticated,
 }: HeaderProps): React.ReactElement {
+
+  const handleClick = () => {
+    if (isAuthenticated) {
+      
+    }
+  }
   return (
     <HeaderContainer>
       <Logo>
@@ -58,7 +64,7 @@ export default function Header({
         <Category>
           <CategoryItem>{"Home"}</CategoryItem>
         </Category>
-        <Category>
+        <Category onClick={handleClick}>
           <CategoryItem>
             {isAuthenticated ? "Sign Out" : "Sign In"}
           </CategoryItem>

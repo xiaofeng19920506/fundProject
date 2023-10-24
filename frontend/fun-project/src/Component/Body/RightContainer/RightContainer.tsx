@@ -59,7 +59,7 @@ const FilterContainer = styled.div`
 const Filter = styled.span`
   color: black;
   background-color: grey;
-
+  margin-right: 2rem;
   width: 100%;
 `;
 export default function RightContainer(): React.ReactElement {

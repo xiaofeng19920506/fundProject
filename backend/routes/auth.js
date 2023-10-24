@@ -77,9 +77,6 @@ AuthRouter.post("logout", (req, res) => {
         });
     }
 
-    // Add the token to the blacklist
-    tokenBlacklist.push(token);
-
     res.status(200).send({
         message: "Token has been blacklisted",
     });
